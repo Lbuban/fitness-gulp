@@ -79,3 +79,9 @@ gulp.task('about', function() {
       .pipe(about())
       .pipe(gulp.dest('./assets/js/about'));
   });
+
+  gulp.task('jstasks', ['babel', 'beautify']); 
+
+  gulp.task('htmltasks', ['htmlhint']); 
+
+  gulp.task('csstasks', ['sass', 'validate']); 
